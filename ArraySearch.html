@@ -1,0 +1,24 @@
+<script>
+    let myArray = []
+    flag = 0
+
+    let numElements = parseInt(prompt("Enter the number of elements:"))
+
+    for (let i = 0; i < numElements; i++) {
+        let element = parseInt(prompt(`Enter element ${i + 1}:`))
+        myArray.push(element);
+    }
+
+    document.write("Array:", myArray)
+    document.write("<br/>")
+    a = parseInt(prompt("Enter the element to be searched:"))
+    for (let i = 0; i < numElements; i++) {
+        if (myArray[i] == a) {
+            flag = 1
+        }
+    }
+    if (flag == 1)
+        document.write("Element found")
+    else
+        print("Element not found")
+</script>

@@ -1,0 +1,13 @@
+<script>
+    const originalString = prompt("Enter the String:")
+    let reversedString = ''
+    len = originalString.length
+
+    for (i = len - 1; i >= 0; i--) {
+        reversedString += originalString[i]
+    }
+    document.write(`Original String: ${originalString}`)
+    document.write("<br/>")
+    document.write(`Reversed String: ${reversedString}`)
+
+</script>
